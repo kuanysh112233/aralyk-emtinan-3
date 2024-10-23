@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    border: 1px solid;
+    width: 200px ;
+    height: 200px ;
+    background-color: blue;
+    margin: 10px;
+    transition: 3s ;
+}
+
+.box:hover{
+    transform: rotate(180deg) ;
+    background-color: pink;
+    width: 400px;
+    height: 400px;
+}
+
+.box-2{
+    border: 1px solid red;
+    width: 700px;
+    height: 200px;
+    margin: 10px;
+}
+
+.cirkul{
+    border: 1px solid red;
+    border-radius: 100%;
+    width: 200px ;
+    height:199px ;
+    background-color: red;
+    animation: cirkul 5s infinite;
+}
+
+@keyframes cirkul {
+    0%{
+        transform: translate(0%)
+    }
+    50%{
+        transform: translate(240%)
+    }
+    240%{
+        transform: translate(0%)
+    }
+}
+
+.cirkul-2{
+    border: 30px solid grey;
+    border-radius: 100%;
+    border-right: 29px solid blue;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    animation: cirkul-2 3s infinite;
+}
+
+@keyframes cirkul-2 {
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+
+
